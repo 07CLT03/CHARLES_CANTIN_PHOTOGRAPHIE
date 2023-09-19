@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Vujahday+Script&display=swap");
+/* SECTION 1 - NAVBAR */
+.navbar .nav-item {
+  position: relative;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  height: 2px;
+  width: 0;
+  transition: 0.4s ease-in;
+}
+
+.nav-link:hover {
+  color: #806c6c;
+}
+
+.nav-item:hover::before {
+  width: 85%;
+  background-color: #806c6c;
+}
+
+/*  MEDIA QUERIES NAVBAR LINK */
+@media screen and (min-width: 992px) {
+  .navbar .nav-item {
+    font-size: 1.1em;
+    padding: 15px 13px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .navbar .nav-item {
+    font-size: 1.3em;
+    padding: 15px 22px;
+  }
+}
+/* SECTION 2 - GALLERY NAVIGATION LINK + HOVER EFFECT */
+.navigation-wrapper .gallery-link {
+  font-family: "Vujahday Script", cursive;
+  font-size: 0.8em;
+}
+.navigation-wrapper .btn-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #806c6c;
+  margin-top: 5px;
+  display: block;
+}
+.navigation-wrapper .btn-link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+/* MEDIA QUERIES  */
+@media screen and (max-width: 576px) {
+  .navigation-wrapper .btn-link {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 576px) {
+  .navigation-wrapper {
+    max-width: 90%;
+  }
+  .navigation-wrapper .btn-link {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation-wrapper .gallery-link {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navigation-wrapper {
+    max-width: 90%;
+  }
+  .navigation-wrapper .gallery-link {
+    font-size: 2.4em;
+  }
+}
+/* SECTION 3 - GALLERIE IMAGES  */
+.img-wrapper .quote {
+  font-family: "Homemade Apple", cursive;
+  line-height: 50px;
+  width: 100%;
+  padding-right: 2%;
+}
+
+/* MEDIA QUERIES - SIZE OF IMAGES  */
+@media screen and (max-width: 576px) {
+  .img-1 {
+    width: 90%;
+    height: 90%;
+    margin-top: 4%;
+  }
+  .img-2-bis {
+    width: 100%;
+    height: 100%;
+  }
+  .img-3-bis {
+    width: 100%;
+    height: 100%;
+  }
+  .img-5-bis {
+    width: 100%;
+    height: 100%;
+    margin-top: -3%;
+  }
+  .img-6-bis {
+    width: 100%;
+    height: 100%;
+    margin-top: -3%;
+  }
+  .img-7-bis {
+    width: 98%;
+    height: 95%;
+    margin-left: 1.5%;
+    margin-top: -2%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .img-1 {
+    width: 99%;
+    height: 350px;
+  }
+  .img-2 {
+    width: 95%;
+    height: 350px;
+  }
+  .img-3 {
+    width: 99%;
+    height: 430px;
+  }
+  .img-4-bis {
+    width: 99%;
+    height: 430px;
+  }
+  .img-5 {
+    width: 99%;
+    height: 400px;
+  }
+  .img-6 {
+    width: 99%;
+    height: 400px;
+  }
+  .img-7 {
+    width: 99%;
+    height: 533px;
+  }
+  .img-7-bis {
+    width: 99%;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .img-1 {
+    width: 99%;
+    height: 500px;
+    padding-right: 3px;
+  }
+  .img-2 {
+    width: 98%;
+    height: 500px;
+    padding-left: 3px;
+  }
+  .img-3 {
+    width: 99%;
+    height: 600px;
+    margin-top: 1px;
+    padding-right: 3px;
+  }
+  .img-4 {
+    width: 99%;
+    height: 500px;
+  }
+  .img-4-bis {
+    width: 99%;
+    height: 600px;
+  }
+  .img-5 {
+    width: 99%;
+    height: 533px;
+    padding-right: 3px;
+  }
+  .img-6 {
+    width: 99%;
+    height: 533px;
+  }
+  .img-7-bis {
+    width: 99%;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .img-1 {
+    width: 95%;
+    height: 470px;
+  }
+  .img-2 {
+    width: 92%;
+    height: 470px;
+  }
+  .img-3 {
+    width: 95%;
+    height: 690px;
+  }
+  .img-4 {
+    width: 670px;
+    height: 380px;
+  }
+  .img-5 {
+    width: 95%;
+    height: 540px;
+  }
+  .img-6 {
+    width: 95%;
+    height: 540px;
+  }
+  .img-7 {
+    width: 95%;
+    height: 540px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .img-1 {
+    width: 100%;
+    height: 500px;
+  }
+  .img-2 {
+    width: 97%;
+    height: 500px;
+  }
+  .img-3 {
+    width: 100%;
+    height: 720px;
+  }
+  .img-4 {
+    width: 100%;
+    height: 400px;
+    padding-left: 10px;
+  }
+  .img-5 {
+    width: 100%;
+    height: 570px;
+  }
+  .img-6 {
+    width: 100%;
+    height: 570px;
+  }
+  .img-7 {
+    width: 100%;
+    height: 570px;
+  }
+}
+.ButtonUp {
+  margin-top: 200px;
+}
+
+/* SECTION 5 - FOOTER  */
+.footer-informations {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.footer-informations .card-title {
+  font-family: "Vujahday Script", cursive;
+  word-spacing: 3.58px;
+  letter-spacing: 3.5px;
+}
+.footer-informations .footer-card-link:hover {
+  font-weight: bolder;
+}
+.footer-informations .footer-card-link:hover a:hover {
+  color: #806c6c;
+}
+.footer-informations .bi-facebook {
+  color: #3b5998;
+  color: rgb(59, 89, 152);
+}
+.footer-informations .bi-linkedin {
+  color: #007bb6;
+  color: rgb(0, 123, 182);
+}
+.footer-informations .bi-instagram {
+  color: #bc2a8d;
+  color: rgb(188, 42, 141);
+}
+.footer-informations .bi-twitter {
+  color: #00aced;
+  color: rgb(0, 172, 237);
+}
+
+@media screen and (max-width: 576px) {
+  .copyright {
+    font-size: 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-title {
+    font-size: 1.8em;
+  }
+}
+.copyright {
+  background-color: #806c6c;
+}
+.copyright .CL {
+  font-family: "Vujahday Script", cursive;
+}/*# sourceMappingURL=gallerie.css.map */
